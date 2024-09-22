@@ -1,0 +1,507 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+.phone {
+    width: 320px;
+    height: 650px;
+    background-image: linear-gradient(to right top, #ccefff, #bef4f7, #bff7e5, #d1f6cc, #f0f1b7);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.30);
+    border: 8px solid black;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    counter-reset: game;
+}
+
+
+.sun {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.050), 0 15px 12px rgba(0, 0, 0, 0.050);
+    background-color: #f0f1b7;
+    border: 1px solid #e9ea9d;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.layer-1 {
+    width: 80px;
+    height: 450px;
+    background-color: #fff;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    z-index: 1;
+
+    animation-name: layer;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+}
+
+    @keyframes layer {
+        
+    0% {
+        bottom: 0;
+    }
+    25% {
+        bottom: -80px;
+    }
+    100% {
+        bottom: 0;
+    }
+        
+}
+
+.layer-1 input[type=checkbox] {
+    appearance: none;
+    cursor: pointer;
+    height: 50px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 80px;
+    z-index: 1;
+}
+
+.layer-2 {
+    width: 80px;
+    height: 450px;
+    background-color: #fff;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    z-index: 2;
+
+    animation-name: layer;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes layer {
+        
+    0% {
+        bottom: 0;
+    }
+    25% {
+        bottom: -80px;
+    }
+    100% {
+        bottom: 0;
+    }
+        
+}
+
+.layer-2 input[type=checkbox] {
+    appearance: none;
+    cursor: pointer;
+    height: 50px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 80px;
+    z-index: 1;
+}
+
+.layer-3 {
+    width: 250px;
+    height: 420px;
+    background-color: burlywood;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.30);
+    box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 3;
+    overflow: hidden;
+}
+.grass-1 {
+    width: 100%;
+    height: 3%;
+    background: linear-gradient(to top, #3cb034, #0ad70a);
+}
+
+.layer-4 {
+    width: 80px;
+    height: 250px;
+    background-color: #fff;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    z-index: 4;
+
+    animation-name: layer;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.9s;
+}
+
+@keyframes layer {
+        
+    0% {
+        bottom: 0;
+    }
+    25% {
+        bottom: -80px;
+    }
+    100% {
+        bottom: 0;
+    }
+        
+}
+
+.layer-4 input[type=checkbox] {
+    appearance: none;
+    cursor: pointer;
+    height: 50px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 80px;
+    z-index: 1;
+}
+
+.layer-5 {
+    width: 130px;
+    height: 280px;
+    background-color: burlywood;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.30);
+    box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    right: 200px;
+    bottom: 35px;
+    margin: 0 auto;
+    z-index: 6;
+    overflow: hidden;
+}
+
+.grass-2 {
+    width: 100%;
+    height: 5%;
+    background: linear-gradient(to top, #3cb034, #0ad70a);
+}
+
+.layer-6 {
+    width: 80px;
+    height: 350px;
+    background-color: #fff;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: 5;
+
+    animation-name: layer;
+    animation-duration: .99s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes layer {
+        
+    0% {
+        bottom: 0;
+    }
+    25% {
+        bottom: -80px;
+    }
+    100% {
+        bottom: 0;
+    }
+        
+}
+
+.layer-6 input[type=checkbox] {
+    appearance: none;
+    cursor: pointer;
+    height: 50px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 80px;
+    z-index: 1;
+}
+
+.layer-7 {
+    width: 230.3px;
+    height: 180px;
+    background-color: burlywood;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.30);
+    box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 75px;
+    right: 0;
+    bottom: 35px;
+    margin: 0 auto;
+    z-index: 7;
+    overflow: hidden;
+}
+
+.grass-3 {
+    width: 100%;
+    height: 7%;
+    background: linear-gradient(to top, #3cb034, #0ad70a);
+}
+
+.layer-8 {
+    width: 90px;
+    height: 185px;
+    background: linear-gradient(to top, #1d6517, #0ad70a);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.50), 0 15px 12px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+}
+
+
+.montain-1 {
+    width: 90px;
+    height: 150px;
+    background: linear-gradient(to top, #3acc30, #0ad70a);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.50), 0 15px 12px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 180px;
+    border-top-right-radius: 180px;
+    position: absolute;
+    left: -60px;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+}
+
+.montain-2 {
+    width: 90px;
+    height: 145px;
+    background: linear-gradient(to top, #3acc30, #0ad70a);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.50), 0 15px 12px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: 0 auto;
+    position: absolute;
+    left: 60px;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+}
+
+
+.layer-9 {
+    width: 100px;
+    height: 120px;
+    background: #fff;
+    border-top-right-radius: 50%;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: -10px;
+    z-index: 9;
+}
+
+.nube-1 {
+    width: 130px;
+    height: 100px;
+    background: #fff;
+    border-top-right-radius: 60%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.50), 0 15px 12px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: -30px;
+}
+
+.layer-10 {
+    width: 100px;
+    height: 120px;
+    background: #fff;
+    border-top-left-radius: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.50), 0 15px 12px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    z-index: 10;
+}
+
+.nube-2 {
+    width: 130px;
+    height: 100px;
+    background: #fff;
+    border-top-left-radius: 60%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.50), 0 15px 12px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+}
+
+
+.left-ear--outer{
+    width: 20px;
+    height: 50px;
+    background: white;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.20), 0 15px 12px rgba(0, 0, 0, 0.20);
+    border-radius: 90%;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+.left-ear--inner{
+    width: 10px;
+    height: 29.5px;
+    background: pink;
+    border-radius: 90%;
+    position: absolute;
+    top: -10px;
+    left: 4px;
+}
+
+.right-ear-outer{
+    width: 20px;
+    height: 50px;
+    background: white;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.20), 0 15px 12px rgba(0, 0, 0, 0.20);
+    border-radius: 90%;
+    position: absolute;
+    top: -20.5px;
+    right: 0;
+}
+
+.right-ear--inner{
+    width: 10px;
+    height: 30px;
+    background: pink;
+    border-radius: 90%;
+    position: absolute;
+    top: -10px;
+    right: 4px;
+}
+
+.head{
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.20), 0 15px 12px rgba(0, 0, 0, 0.20);
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    right: 0;
+}
+
+.head__eye {
+    width: 8px;
+    height: 8px;
+    background-color: #5b5b5b;
+    border-radius: 60%;
+    position: absolute;
+    top: 15px;
+
+    /* asi se construyen los keyframes
+        al contenedor o al objeto que se le va a nimar le agregamos la propiedad "animation-name: 'nombre de la animacion (puede ser cualquiera)'"
+
+        seguidamente fuera del contenedor agregamos @keyframes 'nombre de la animacion' y le ponemos sus variables, pueden ser en % o en 'from' a 'to'
+    */
+
+    animation-name: blink;
+    animation-timing-function: ease;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+    @keyframes blink {
+       0% {
+        height: 8px;
+       }
+       5% {
+        transform: translate(0px, 2px);
+        height: 1px;
+       }
+       10% {
+        transform: translate(0px, 0px);
+        height: 8px;
+       }
+    }
+
+.eye--left {
+    left: 28px;
+}
+
+.eye--right{
+    right: 28px;
+}
+
+input:checked {
+    counter-increment: game;
+}
+
+.total-counter::after {
+    content: counter(game);
+    font-weight: bold;
+    color: #212121;
+}
+
+.title {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+h1 {
+    font-family: "Roboto", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    margin-bottom: 20px;
+    color: #5b5b5b;
+}
+h3{
+    font-family: "Roboto", system-ui;
+    font-weight: 100;
+    font-style: italic;
+    color: #5b5b5b;
+}
